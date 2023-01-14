@@ -5,3 +5,4 @@ The objective here was simply to combine the ontouch (mobile) and onmouse (deskt
 
 Feel free to copy-n-paste any portion, or the complete work, to use for your own purpose. However, any resulting work must be released under the same GNU General Public License v2.0
 
+:-)
