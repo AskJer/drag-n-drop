@@ -1,0 +1,36 @@
+html,
+body {
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+    color: gray;
+    user-select: none;
+}
+
+.fullScreen, .dropzone, .fixedPOS {
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 0px;
+    width: 0px;
+    background-color: transparent;
+    outline: solid #aaaaaa;
+    z-index: -1;
+}
+
+.movable {
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 0px;
+    width: 0px;
+    background-color: #cccccc;
+    outline: solid #888888;
+    z-index: -1;}
+
+.movableContent {
+    pointer-events: none;
+    z-index: --1;
+}

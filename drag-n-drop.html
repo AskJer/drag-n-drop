@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <link rel="stylesheet" href="styles/dnd.css" />
+
+    <title>Drag and Drop</title>
+  </head>
+  <body
+    onresize="paintScreen('resize'); onorientationchange=paintScreen('rotate');"
+  >
+    <div
+      id="fullScreenDIV"
+      class="fullScreen"
+      onmousemove="mouseMoving(event, 'mouse')"
+      ontouchmove="mouseMoving(event, 'touch')"
+      onmousedown="onClickTouchStart(event, 'mouse')"
+      ontouchstart="onClickTouchStart(event, 'touch')"
+      onmouseup="onClickTouchEnd(event, 'mouse')"
+      ontouchend="onClickTouchEnd(event, 'touch')"
+    >
+      <div id="mouseTouchPosition" class="fixedPOS"></div>
+    </div>
+    <script src="scripts/dnd.js"></script>
+  </body>
+</html>
